@@ -1,0 +1,29 @@
+{% block subject %}Activation Link{% endblock %}
+{% block html_body %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Verification</title>
+</head>
+<body>
+  <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+    <h2>Account Verification</h2>
+    <p>Dear User,</p>
+    <p>Thank you for signing up with our service. To complete your account verification, please click on the button below:</p>
+
+    <a href="https://www.example.com/verify-account" style="display: inline-block; background-color: #2196F3; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px;">Verify Account</a>
+
+    <p>If you are having trouble with the button, you can also copy and paste the following URL into your browser:</p>
+    <p><a href="https://www.example.com/verify-account">https://www.example.com/verify-account</a></p>
+
+    <p>Please note that this link will expire in 24 hours for security reasons.</p>
+
+    <p>If you did not create an account with us, please ignore this email.</p>
+
+    <p>Best regards,<br>
+    Sent by {{ name }}</p>
+  </div>
+</body>
+
+{% endblock %}
+
